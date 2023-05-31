@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crunchyroll</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- icons from remix -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="header-logo">
+            <img src="crunchyroll.png" alt="">
+        </div>
+        <div class="header-left">
+
+            <div class="browse-menu">
+                <div class="browse-menu-link menu-items">
+                    <a class="">Browse</a>
+                    <i class="ri-arrow-down-double-fill"></i>
+                </div>
+
+                <div class="menu-wrapper">
+                    <a class="menu-items">Popular</a>
+                    <a class="menu-items">New</a>
+                    <a class="menu-items">Alphabetical</a>
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <a class="menu-items">Manga</a>
+                <a class="menu-items">Games</a>
+                <div class="news-menu">
+                    <div class="news-menu-container menu-items">
+                        <a class="">News</a>
+                        <i class="ri-arrow-down-double-fill"></i>
+                    </div>
+
+                    <div class="menu-wrapper">
+                        <a class="menu-items">Popular</a>
+                        <a class="menu-items">New</a>
+                        <a class="menu-items">Alphabetical</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+
+            <button class="search-button">
+                <i class="ri-search-line"></i>
+            </button>
+            <button class="bookmark-button">
+                <i class="ri-bookmark-line"></i>
+            </button>
+            <button class="profile-button">
+                <i class="ri-user-3-fill"></i>
+            </button>
+
+
+        </div>
+    </header>
+
+    <div class="slide-container">
+        <div class="slider">
+            <div class="slider-content">
+                <div class="slide">
+                    <img src="image1.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="image2.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="image3.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+        <div class="slider-buttons">
+            <button class="slider-button-p" onclick="previousSlide()">
+                <i class="ri-arrow-left-double-fill"></i>
+            </button>
+            <button class="slider-button-n" onclick="nextSlide()">
+                <i class="ri-arrow-right-double-fill"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="slider-dots">
+        <div class="slider-dot active">
+            Demon Slayer
+        </div>
+        <div class="slider-dot">
+            Jujutsu
+        </div>
+        <div class="slider-dot">
+            Mashle
+        </div>
+    </div>
+
+    <div class="short-container">
+        <div class="anime-container">
+            <img src="image1.jpg" alt="demon-slayer">
+            <div class="details-container">
+                <div class="title">
+                    <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+                </div>
+                <a class="type">
+                    Series. Sub| Dub
+                </a>
+                <div class="description">
+                    <p>It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living,
+                        finds his family slaughtered by a demon. To make matters worse, his younger... </p>
+                </div>
+                <div class="player-container">
+                    <div class="play">
+                        <button><i class="ri-play-fill"></i>
+                            <h2>START WATCHING S2 E1</h2>
+                        </button>
+                    </div>
+                    <div class="bookmark">
+                        <button><i class="ri-bookmark-line"></i>
+                            <h2>ADD TO WATCHLIST</h2>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anime-container">
+            <img src="image2.jpg" alt="Jujutsu">
+            <div class="details-container">
+                <div class="title">
+                    <h1>Dr. STONE</h1>
+                </div>
+                <a class="type">
+                    Series. Sub| Dub
+                </a>
+                <div class="description">
+                    <p>Several thousand years after a mysterious phenomenon that turns all of humanity to stone, the
+                        extraordinarily intelligent, science-driven boy, Senku Ishigami, awakens...</p>
+                </div>
+                <div class="player-container">
+                    <div class="play">
+                        <button><i class="ri-play-fill"></i>
+                            <h2>START WATCHING S1 E3</h2>
+                        </button>
+                    </div>
+                    <div class="bookmark">
+                        <button><i class="ri-bookmark-line"></i>
+                            <h2>ADD TO WATCHLIST</h2>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anime-container">
+            <img src="image3.jpg" alt="Jujutsu">
+            <div class="details-container">
+                <div class="title">
+                    <h1>MASHLE: MAGIC AND MUSCLES</h1>
+                </div>
+                <a class="type">
+                    Series. Sub| Dub
+                </a>
+                <div class="description">
+                    <p>This is a world of magic. This is a world in which magic is casually used by everyone. In a
+                        deep, dark forest in this world of magic, there is a boy who is singlemindedly...</p>
+                </div>
+                <div class="player-container">
+                    <div class="play">
+                        <button><i class="ri-play-fill"></i>
+                            <h2>START WATCHING S3 E2</h2>
+                        </button>
+                    </div>
+                    <div class="bookmark">
+                        <button><i class="ri-bookmark-line"></i>
+                            <h2>ADD TO WATCHLIST</h2>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="main-links">
+            <div class="navigation">
+                <h3>Navigation</h3>
+                <a href="Browse Popular">Browse Popular</a>
+                <a href="Browse Popular">Browse Simulcasts</a>
+                <a href="Browse Popular">Browse Manga</a>
+                <a href="Browse Popular">Browse Calender</a>
+            </div>
+            <div class="connect-with-us">
+                <h3>Connect with Us</h3>
+                <a href="Browse Popular">Youtube</a>
+                <a href="Browse Popular">Facebook</a>
+                <a href="Browse Popular">Twitter</a>
+                <a href="Browse Popular">Instagram</a>
+            </div>
+            <div class="crunchyroll">
+                <h3>Crunchyroll</h3>
+                <a href="Browse Popular">About</a>
+                <a href="Browse Popular">Help</a>
+                <a href="Browse Popular">Terms of Use</a>
+                <a href="Browse Popular">Privacy Policy</a>
+            </div>
+            <div class="account">
+                <h3>Account</h3>
+                <a href="Browse Popular">Create Account</a>
+                <a href="Browse Popular">Log In</a>
+            </div>
+        </div>
+        <div class="credit-bar">
+            <div class="credit">
+                <p>Crunchyroll, LLC</p>
+            </div>
+            <div class="language-selector">
+                <div class="dropdown-content">
+                    <span onclick="selectLanguage('English(US)')">English(US)</span>
+                    <span onclick="selectLanguage('English(UK)')">English(UK)</span>
+                    <span onclick="selectLanguage('French')">French</span>
+                </div>
+                <button class="button" id="selectedLanguageBtn">English(US)</button>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
